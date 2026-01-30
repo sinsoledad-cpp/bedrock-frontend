@@ -2,13 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Keep existing variables if needed, but Tailwind usually handles colors */
 :root {
   --vt-c-white: #ffffff;
   --vt-c-black: #181818;
 }
 
 body {
-  background-color: var(--vt-c-white);
-  color: var(--vt-c-black);
+  @apply bg-white text-zinc-900 dark:bg-zinc-950 dark:text-zinc-50 transition-colors duration-300;
 }
